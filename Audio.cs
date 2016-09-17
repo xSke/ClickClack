@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 using NAudio.Wave;
 using NAudio.Wave.SampleProviders;
 
+// Basically completely lifted off http://mark-dot-net.blogspot.dk/2014/02/fire-and-forget-audio-playback-with.html
+// I only made minor modifications to CachedSound to allow for direct streams rather than files
+
 class AudioPlaybackEngine : IDisposable
 {
     private readonly IWavePlayer outputDevice;
